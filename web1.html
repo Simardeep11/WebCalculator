@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Calculator</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-500 p-4">
+    <H1 class="text-6xl font-bold ">CALCULATOR</H1>
+    </nav>
+    <div class="container mx-auto p-4"> 
+<div class="mt-5">
+<!-- Weight Conversion Form -->
+<div id="weightConversion-tab">
+<h2 class="text-2xl font-bold mb-4">Weight Converter</h2>
+    <form id="weightConversion-form">
+        <label for="weightInput" class="block mb-2">Enter Weight:</label>
+        <input type="number" id="weightInput"  class="border p-2 mb-2">
+        <select id="conversionDirection" class="mb-2">
+            <option value="poundsToKilograms">Pounds to Kilograms</option>
+            <option value="kilogramsToPounds">Kilograms to Pounds</option>
+            </select>
+        <button type="button" onclick="convertWeight()" class="bg-blue-500 text-white px-4 py-2">Convert</button>
+        <p id="resultContainer" class="mt-2"></p>
+        </form>
+</div>
+</div>
+
+<!-- Distance Conversion Form -->
+<div class="mt-5">
+<div id="distanceConversion-tab">
+<h2 class="text-2xl font-bold mb-2">Distance Converter</h2>
+    <form id="distanceConversion-form">
+        <label for="distanceInput" class="block mb-2">Enter Distance:</label>
+        <input type="number" id="distanceInput" class="border p-2 mb-2">
+        <select id="distanceConversionDirection" class="mb-2">
+            <option value="milesToKilometers">Miles to Kilometers</option>
+            <option value="kilometersToMiles">Kilometers to Miles</option>
+        </select>
+        <button type="button" onclick="convertDistance()" class="bg-blue-500 text-white px-4 py-2">Convert</button>
+        <p id="distanceResultContainer" class="mt-2"></p>
+    </form>
+</div>
+</div>
+
+<!-- Temperature Conversion Form -->
+<div class="mt-5">
+<div id="temperatureConversion-tab">
+<h2 class="text-2xl font-semibold mb-2">Temperature Converter</h2>
+    <form id="temperatureConversion-form">
+        <label for="temperatureInput"class="block mb-2" >Enter Temperature:</label>
+        <input type="number" id="temperatureInput"class="border p-2 mb-2" >
+        <select id="temperatureConversionDirection" class="mb-2">
+            <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+            <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+        </select>
+        <button type="button" onclick="convertTemperature()"class="bg-blue-500 text-white px-4 py-2">Convert</button>
+        <!-- Temperature Conversion Form -->
+        <p id="temperatureResultContainer" class="mt-2"></p>
+    </form>
+</div>
+</div>
+
+</div>
+<script src="web1.js"></script>
+</body>
+</html>
